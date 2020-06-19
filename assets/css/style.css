@@ -2,4 +2,87 @@
   padding: 0;
   margin: 0;
 }
+
+body {
+  height: 100vh;
+  background: url("/assets/images/hodgepodge.png") fixed center no-repeat;
+  width: 100%;
+  background-size: cover;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.chat-box {
+  background-color: #fff;
+  height: 45rem;
+  position: relative;
+  overflow-y: hidden;
+  width: 51rem;
+}
+
+.chat-box .nav {
+  text-align: center;
+}
+
+.chat-box .messages {
+  height: 100%;
+  overflow: scroll;
+  display: block;
+}
+
+.chat-box .messages div {
+  padding: 25px 15px;
+  font-size: 1.7rem;
+}
+
+.chat-box .messages #bot {
+  background-color: #9354a3;
+}
+
+.chat-box .messages #user {
+  text-align: right;
+  background-color: #ffd139;
+}
+
+.chat-box .reply {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  padding: 1rem 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.chat-box .reply input {
+  padding: 25px 15px;
+  width: 100%;
+}
+
+.chat-box .reply .icon {
+  padding: .2rem;
+  height: 100%;
+  background-color: #1f1e1e;
+}
+
+.chat-box .reply .icon button {
+  color: #ffffff;
+  background-color: inherit;
+  padding: 25px;
+  border: none;
+  outline: none;
+  cursor: pointer;
+}
+
+.chat-box .reply .icon button:hover, .chat-box .reply .icon button:active {
+  background-color: #ffffff;
+  color: #1f1e1e;
+}
 /*# sourceMappingURL=style.css.map */

@@ -2,4 +2,74 @@
     padding: 0 
     margin: 0
 
+
+
+$white: #ffffff
+$dark: #1f1e1e
 // body 
+
+body 
+    height: 100vh
+    // background: url('../assets/images/hodgepodge.png')fixed center no-repeat
+    background: url('/assets/images/hodgepodge.png')fixed center no-repeat
+    // background-color: #333
+    width: 100%
+    background-size: cover
+    display: flex
+    justify-content: center
+    align-items: center
+
+
+
+.chat-box
+    background-color: #fff
+    height: 45rem
+    position: relative
+    overflow-y: hidden
+    width: 51rem
+    .nav
+        text-align: center
+    .messages
+        height: 100%
+        overflow: scroll
+        display: block
+        div
+            padding: 25px 15px
+            font-size: 1.7rem
+            // background-color: #5e3
+        #bot
+            background-color: #9354a3
+        #user 
+            text-align: right
+            background-color: #ffd139
+            
+    .reply
+        // background-color: $dark
+        position: absolute
+        bottom: 0
+        width: 100%
+        padding: 1rem 0 0
+        display: flex
+        input
+            // height: 100%
+            padding: 25px 15px
+            width: 100%
+        .icon
+            padding: .2rem
+            height: 100%
+            background-color: $dark
+            button
+                color: $white
+                background-color: inherit
+                padding: 25px
+                border: none
+                outline: none
+                cursor: pointer
+                &:hover, &:active
+                    background-color: $white
+                    color: $dark
+
+
+
+
+
