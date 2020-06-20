@@ -102,7 +102,9 @@ body
 
 .chat-box
     background-color: #fff
+    display: flex
     border-radius: 10px
+    flex-direction: column
     height: 45rem
     position: relative
     overflow-y: hidden
@@ -137,10 +139,11 @@ body
                 top: 5px
     .messages
         height: 100%
-        overflow: scroll
+        overflow-y: scroll
         display: block
         background-color: #1b1b1b
         font-family: $alt-font
+        // margin-bottom: 100px
         // font-family: $p-font
         // flex-direction: column
         span 
@@ -153,10 +156,10 @@ body
             
 
     .reply
-        position: absolute
-        bottom: 0
+        // position: absolute
+        // bottom: 0
         width: 100%
-        padding: 1rem 0 0
+        // padding: 0rem 0 0
         display: flex
         input
             // height: 100%
