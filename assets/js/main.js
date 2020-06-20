@@ -141,5 +141,17 @@ const reply = [
         }
     })
 
+
+
+    const sendBtn = document.getElementById("send");
+
+    sendBtn.addEventListener('click', () => {
+      let input = inputField.value;
+      inputField.value = "";
+      output(input);
   })
 
+  })
+
+
+  

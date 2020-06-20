@@ -8,6 +8,18 @@
 </head>
 <body>
     <div class="container">
+        <button class="trigger">Open Modal</button>
+        <!-- Info for BOT -->
+        <div class="modal">
+            <div class="info modal-content" >
+                <p>
+                    This bot is rude, if you say what it doesn't 
+                    understand it won't respond
+                </p>
+                <span>But here are a few commands you can interact with</span>
+            </div>
+        </div>
+        
         <div class="case">
             <div class="chat-box">
                 <div class="nav">
@@ -15,15 +27,7 @@
                     <span>Possible Commands</span>
                 </div>
 
-                <!-- Info for BOT -->
-
-                <div class="info" style="display: none;">
-                    <p>
-                        This bot is rude, if you say what it doesn't 
-                        understand it won't respond
-                    </p>
-                    <span>But here are a few commands you can interact with</span>
-                </div>
+                
 
                 
 
@@ -55,7 +59,7 @@
                 <div class="reply">
                     <input id="message" type="text" placeholder="type your message...">
                     <div class="icon">
-                        <button>
+                        <button id="send">
                             <img src="assets/images/send.svg" alt="" srcset="">
                         </button>
                     </div>
