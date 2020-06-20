@@ -11,13 +11,36 @@ $dark: #1f1e1e
 body 
     height: 100vh
     // background: url('../assets/images/hodgepodge.png')fixed center no-repeat
-    background: url('/assets/images/hodgepodge.png') fixed center no-repeat
+    background: url('/assets/images/chat-bg.png') fixed center no-repeat
     // background-color: #333
     width: 100%
     background-size: cover
     display: flex
     justify-content: center
     align-items: center
+
+
+#bot
+    // background-color: #9354a3
+    display: flex
+    justify-content: flex-start
+    .bot-response
+        background-color: #e33
+        padding: 1rem
+        color: #fff
+        border-top-right-radius: 5px
+        border-bottom-right-radius: 1px
+#user 
+    text-align: center
+    display: flex
+    justify-content: flex-end
+    .user-response
+        color: red
+        padding: 1rem
+        color: #333
+        // background-color: green
+        background-color: #ffd139
+        // width: 50%
 
 
 
@@ -29,20 +52,26 @@ body
     width: 45rem
     .nav
         text-align: center
+        display: flex
+        width: 100%
+        // padding: 0 25px
+        justify-content: space-evenly
+        align-items: center
+        background-color: #e0e0e0
     .messages
         height: 100%
         overflow: scroll
         display: block
-        div
-            padding: 25px 15px
-            font-size: 1.7rem
+        // flex-direction: column
+        span 
+            display: block
+        p
+            padding: 25px
+            font-size: 1.2rem
             // background-color: #5e3
-        #bot
-            background-color: #9354a3
-        #user 
-            text-align: right
-            background-color: #ffd139
+        
             
+
     .reply
         // background-color: $dark
         position: absolute

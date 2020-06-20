@@ -74,15 +74,15 @@ const reply = [
         .replace(/please /g, "")
         .replace(/ please/g, "");
 
-    if (compare(trigger, reply, text)) {
-        product = compare(trigger, reply, text);
-    } else if (text.match(/coronavirus/gi)) {
-        product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
-    } else {
-        product = alternative[Math.floor(Math.random() * alternative.length)];
-    }
+      if (compare(trigger, reply, text)) {
+          product = compare(trigger, reply, text);
+      } else if (text.match(/coronavirus/gi)) {
+          product = coronavirus[Math.floor(Math.random() * coronavirus.length)];
+      } else {
+          product = alternative[Math.floor(Math.random() * alternative.length)];
+      }
 
-    addChat(input, product)
+      addChat(input, product)
   }
 
 
@@ -100,18 +100,18 @@ const reply = [
   }
 
   function addChat(input, product) {
-      const mainDiv = document.getElementById('user')
-      let userDiv = document.createElement("div");
-      userDiv.id = "user"
-      userDiv.innerHTML = `You: <span id="user-response">${input}</span>`;
-      mainDiv.appendChild(userDiv);
+      const mainDiv = document.getElementById('responses')
+      let userPara = document.createElement("p");
+      userPara.id = "user"
+      userPara.innerHTML = `<span class="user-response">You: ${input}</span>`;
+      mainDiv.appendChild(userPara);
 
 
-      const botMain = document.getElementById("bot");
-      let botDiv = document.createElement("div");
-      botDiv.id = "bot";
-      botDiv.innerHTML = `Chatbot: <span id="bot-response">${product}</span>`;
-      botMain.appendChild(botDiv);
+      // const botMain = document.getElementById("bot");
+      let botPara = document.createElement("p");
+      botPara.id = "bot";
+      botPara.innerHTML = `<span class="bot-response">Chatbot: ${product}</span>`;
+      mainDiv.appendChild(botPara);
       speak(product);
       
   }

@@ -5,7 +5,7 @@
 
 body {
   height: 100vh;
-  background: url("/assets/images/hodgepodge.png") fixed center no-repeat;
+  background: url("/assets/images/chat-bg.png") fixed center no-repeat;
   width: 100%;
   background-size: cover;
   display: -webkit-box;
@@ -19,6 +19,40 @@ body {
           align-items: center;
 }
 
+#bot {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+}
+
+#bot .bot-response {
+  background-color: #e33;
+  padding: 1rem;
+  color: #fff;
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 1px;
+}
+
+#user {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+}
+
+#user .user-response {
+  color: red;
+  padding: 1rem;
+  color: #333;
+  background-color: #ffd139;
+}
+
 .chat-box {
   background-color: #fff;
   height: 45rem;
@@ -29,6 +63,17 @@ body {
 
 .chat-box .nav {
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 100%;
+  -webkit-box-pack: space-evenly;
+      -ms-flex-pack: space-evenly;
+          justify-content: space-evenly;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  background-color: #e0e0e0;
 }
 
 .chat-box .messages {
@@ -37,18 +82,13 @@ body {
   display: block;
 }
 
-.chat-box .messages div {
-  padding: 25px 15px;
-  font-size: 1.7rem;
+.chat-box .messages span {
+  display: block;
 }
 
-.chat-box .messages #bot {
-  background-color: #9354a3;
-}
-
-.chat-box .messages #user {
-  text-align: right;
-  background-color: #ffd139;
+.chat-box .messages p {
+  padding: 25px;
+  font-size: 1.2rem;
 }
 
 .chat-box .reply {
