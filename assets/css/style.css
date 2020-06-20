@@ -6,7 +6,7 @@
 
 body {
   height: 100vh;
-  background: url("/assets/images/chat-bg.png") fixed center no-repeat;
+  background: url("https://res.cloudinary.com/dyj6pqx6d/image/upload/v1592680460/chat-bg_q7halt.png") fixed center no-repeat;
   width: 100%;
   background-size: cover;
   display: -webkit-box;
@@ -134,6 +134,7 @@ body {
 }
 
 .chat-box .reply input:focus {
+  outline: 0;
   border-top: 2px solid #44f81b;
 }
 
