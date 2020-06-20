@@ -102,7 +102,7 @@ body {
   overflow: scroll;
   display: block;
   background-color: #1b1b1b;
-  font-family: "Lobster Two";
+  font-family: Capriola;
 }
 
 .chat-box .messages span {
@@ -111,7 +111,7 @@ body {
 
 .chat-box .messages p {
   padding: 25px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .chat-box .reply {
@@ -157,5 +157,37 @@ body {
   background-color: #e33;
   color: #1f1e1e;
   opacity: 1;
+}
+
+@media (max-width: 767px) {
+  .chat-box {
+    width: 90vw;
+  }
+  .chat-box .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+
+@media (max-width: 384px) {
+  .chat-box {
+    border-radius: 0;
+    height: 100vh;
+    width: 100vw;
+  }
+  .chat-box .nav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
 }
 /*# sourceMappingURL=style.css.map */

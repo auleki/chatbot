@@ -87,13 +87,14 @@ body
         overflow: scroll
         display: block
         background-color: #1b1b1b
-        font-family: $p-font
+        font-family: $alt-font
+        // font-family: $p-font
         // flex-direction: column
         span 
             display: block
         p
             padding: 25px
-            font-size: 1.2rem
+            font-size: 1rem
             // background-color: #5e3
         
             
@@ -137,3 +138,20 @@ body
 
 
 
+@media (max-width: 767px) 
+    .chat-box 
+        width: 90vw
+        .nav
+            display: flex
+            flex-direction: column
+
+
+
+@media (max-width: 384px)
+    .chat-box 
+        border-radius: 0
+        height: 100vh
+        width: 100vw
+        .nav
+            display: flex
+            flex-direction: column
