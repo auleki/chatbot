@@ -150,20 +150,25 @@ body {
   background-color: #e0e0e0;
 }
 
-.chat-box .nav span {
+.chat-box .nav button {
   padding: 1em;
   background-color: #fff;
   border-radius: 100px;
   position: relative;
+  font-weight: 600;
+  font-family: "Rock Salt";
+  outline: 0;
+  border: 0;
   top: 0;
   -webkit-transition: all 250ms;
   transition: all 250ms;
 }
 
-.chat-box .nav span:hover, .chat-box .nav span:active {
+.chat-box .nav button:hover, .chat-box .nav button:active {
   background-color: #1f1e1e;
   cursor: pointer;
   color: #ffffff;
+  outline: 0;
   top: 5px;
 }
 
