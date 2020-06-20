@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Capriola&family=Lobster+Two&family=Rock+Salt&display=swap");
 * {
   padding: 0;
   margin: 0;
@@ -31,9 +32,8 @@ body {
 #bot .bot-response {
   background-color: #e33;
   padding: 1rem;
+  border-radius: 50px;
   color: #fff;
-  border-top-right-radius: 5px;
-  border-bottom-right-radius: 1px;
 }
 
 #user {
@@ -47,6 +47,7 @@ body {
 }
 
 #user .user-response {
+  border-radius: 50px;
   color: red;
   padding: 1rem;
   color: #333;
@@ -55,6 +56,7 @@ body {
 
 .chat-box {
   background-color: #fff;
+  border-radius: 10px;
   height: 45rem;
   position: relative;
   overflow-y: hidden;
@@ -67,6 +69,8 @@ body {
   display: -ms-flexbox;
   display: flex;
   width: 100%;
+  padding: 2rem 0;
+  font-family: "Rock Salt";
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
@@ -76,10 +80,29 @@ body {
   background-color: #e0e0e0;
 }
 
+.chat-box .nav span {
+  padding: 1em;
+  background-color: #fff;
+  border-radius: 100px;
+  position: relative;
+  top: 0;
+  -webkit-transition: all 250ms;
+  transition: all 250ms;
+}
+
+.chat-box .nav span:hover, .chat-box .nav span:active {
+  background-color: #1f1e1e;
+  cursor: pointer;
+  color: #ffffff;
+  top: 5px;
+}
+
 .chat-box .messages {
   height: 100%;
   overflow: scroll;
   display: block;
+  background-color: #1b1b1b;
+  font-family: "Lobster Two";
 }
 
 .chat-box .messages span {
@@ -102,14 +125,21 @@ body {
 }
 
 .chat-box .reply input {
-  padding: 25px 15px;
+  background-color: #1f1e1e;
+  font-family: Capriola;
+  color: #fff;
+  padding: 0 15px;
+  border: 2px solid transparent;
   width: 100%;
 }
 
+.chat-box .reply input:focus {
+  border-top: 2px solid #44f81b;
+}
+
 .chat-box .reply .icon {
-  padding: .2rem;
   height: 100%;
-  background-color: #1f1e1e;
+  background-color: #44f81b;
 }
 
 .chat-box .reply .icon button {
@@ -119,10 +149,13 @@ body {
   border: none;
   outline: none;
   cursor: pointer;
+  -webkit-transition: 150ms;
+  transition: 150ms;
 }
 
 .chat-box .reply .icon button:hover, .chat-box .reply .icon button:active {
-  background-color: #ffffff;
+  background-color: #e33;
   color: #1f1e1e;
+  opacity: 1;
 }
 /*# sourceMappingURL=style.css.map */

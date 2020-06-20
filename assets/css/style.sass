@@ -1,3 +1,11 @@
+@import url('https://fonts.googleapis.com/css2?family=Capriola&family=Lobster+Two&family=Rock+Salt&display=swap')
+
+
+$p-font: 'Lobster Two'
+$s-font: 'Rock Salt'
+$alt-font: Capriola
+
+
 * 
     padding: 0 
     margin: 0
@@ -27,25 +35,27 @@ body
     .bot-response
         background-color: #e33
         padding: 1rem
+        border-radius: 50px
         color: #fff
-        border-top-right-radius: 5px
-        border-bottom-right-radius: 1px
+        // border-top-right-radius: 5px
+        // border-bottom-right-radius: 1px
 #user 
     text-align: center
     display: flex
     justify-content: flex-end
     .user-response
+        border-radius: 50px
         color: red
         padding: 1rem
         color: #333
-        // background-color: green
         background-color: #ffd139
-        // width: 50%
+
 
 
 
 .chat-box
     background-color: #fff
+    border-radius: 10px
     height: 45rem
     position: relative
     overflow-y: hidden
@@ -54,14 +64,30 @@ body
         text-align: center
         display: flex
         width: 100%
-        // padding: 0 25px
+        padding: 2rem 0
+        font-family: $s-font
         justify-content: space-evenly
         align-items: center
+        
         background-color: #e0e0e0
+        span 
+            padding: 1em
+            background-color: #fff
+            border-radius: 100px
+            position: relative
+            top: 0
+            transition: all 250ms
+            &:hover, &:active
+                background-color: $dark
+                cursor: pointer
+                color: $white
+                top: 5px
     .messages
         height: 100%
         overflow: scroll
         display: block
+        background-color: #1b1b1b
+        font-family: $p-font
         // flex-direction: column
         span 
             display: block
@@ -73,7 +99,6 @@ body
             
 
     .reply
-        // background-color: $dark
         position: absolute
         bottom: 0
         width: 100%
@@ -81,12 +106,19 @@ body
         display: flex
         input
             // height: 100%
-            padding: 25px 15px
-            width: 100%
-        .icon
-            padding: .2rem
-            height: 100%
             background-color: $dark
+            font-family: $alt-font
+            color: #fff
+            padding: 0 15px
+            border: 2px solid transparent
+            width: 100%
+            &:focus
+                border-top: 2px solid #44f81b
+                // border-bottom: 2px solid blue
+        .icon
+            // padding: .5rem
+            height: 100%
+            background-color:#44f81b
             button
                 color: $white
                 background-color: inherit
@@ -94,9 +126,12 @@ body
                 border: none
                 outline: none
                 cursor: pointer
+                transition: 150ms
+                // opacity: .5
                 &:hover, &:active
-                    background-color: $white
+                    background-color: #e33
                     color: $dark
+                    opacity: 1
 
 
 
