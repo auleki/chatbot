@@ -183,8 +183,25 @@ body {
   height: 100%;
   overflow-y: scroll;
   display: block;
+  scrollbar-width: thin;
+  scrollbar-color: #FDA900 #1f1e1e;
   background-color: #1b1b1b;
   font-family: Capriola;
+}
+
+.chat-box .messages::-webkit-scrollbar {
+  width: 8px;
+  background-color: #1f1e1e;
+}
+
+.chat-box .messages::-webkit-scrollbar-track {
+  backgroun: orange;
+}
+
+.chat-box .messages::-webkit-scrollbar-thumb {
+  background: #FDA900;
+  border-radius: 20px;
+  border: 3px solid #ffb411;
 }
 
 .chat-box .messages span {
