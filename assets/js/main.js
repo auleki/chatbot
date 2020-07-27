@@ -1,3 +1,5 @@
+// Comment for PR possible 
+
 const trigger = [
     ["hi", "hey", "hello", "good morning", "good afternoon"],
   ["how are you", "how is life", "how are things"],
